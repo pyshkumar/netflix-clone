@@ -1,0 +1,36 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 30px;
+  z-index: 1;
+
+  /* display: flex;
+  justify-content: space-between; */
+
+  /*Animation*/
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav_black {
+  background-color: #111;
+}
+
+.nav_logo {
+  position: fixed;
+  left: 5px;
+  width: 80px;
+  object-fit: contain; /*Prevent logo disfiguration, when its shrink in size*/
+}
+
+.nav_avatar {
+  position: fixed;
+  right: 10px;
+  width: 40px;
+  object-fit: contain;
+}
+/*To make the logo and avatar logo be in same row-> flex, 
+extreme corener ->width(100%)+justifycontent alng with position 
+and left and right respectively for the .nav_log and .nav_avatar*/
